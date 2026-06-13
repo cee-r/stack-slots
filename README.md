@@ -1,6 +1,6 @@
 # stack-slots
 
-Fun project generator. Spin the reels to generate a random frontend stack combination.
+Sprinkling RNG on my projects. Spin the reels to generate a random frontend stack combination.
 
 ## Reels
 
