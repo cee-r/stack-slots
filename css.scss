@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap');
+
+$font-base: "Open Sans", sans-serif;
+$font-heading: "Permanent Marker", cursive;
+
+$blue: #77cedc;
+// .open-sans-<uniquifier> {
+//   font-family: "Open Sans", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+//   font-variation-settings:
+//     "wdth" 100;
+// }
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-image: url(img/dot.jpg);
+    background-repeat: repeat;
+    background-size: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: $font-base;
+    font-weight: 16px;
+}
+
+main {
+    width: 75%; 
+    border: 5px dashed black;
+    border-radius: 1rem;
+    border-style: dashed;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: $font-heading;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.reels {
+    display: flex;
+    gap: 14px;
+    align-items: stretch;
+}
+
+.reel-wrapper {
+    flex: 1;
+    // display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reel-label {
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    background: white;
+    padding: .5rem;
+    // display: inline-block;
+}
+
+/* ── Spin button ── */
+.btn-spin {
+    background: black;
+    color: white;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    border: none;
+    padding: .5rem 1rem;
+    display: block;
+    margin: 1rem auto;
+    margin-top: 5rem;
+    cursor: pointer;
+
+    &:hover {
+       background: white;
+        color: black;
+    }
+}
+
+.reel-inner {
+    background: #ccc;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+}
